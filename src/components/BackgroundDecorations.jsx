@@ -1,4 +1,5 @@
 // Decorative background animations - flames, horse, particles
+import horseImg from '../assets/images/horse.png';
 
 function HorseSilhouette() {
   return (
@@ -7,7 +8,7 @@ function HorseSilhouette() {
         {/* Public domain galloping horse silhouette */}
         <img
           className="horse-img"
-          src="/src/assets/images/horse.png"
+          src={horseImg}
           alt=""
           aria-hidden="true"
         />

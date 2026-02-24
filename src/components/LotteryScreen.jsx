@@ -3,6 +3,12 @@ import { useState, useEffect, useRef, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ROUND_CONFIGS, drawWinners, buildDivinationText, shuffleArray } from '../data/lotteryData';
 import { Confetti } from './WinnerDisplay';
+import round1Img from '../assets/images/round1.png';
+import round2Img from '../assets/images/round2.png';
+import round3Img from '../assets/images/round3.png';
+import round4Img from '../assets/images/round4.png';
+
+const ROUND_BG_IMAGES = { 1: round1Img, 2: round2Img, 3: round3Img, 4: round4Img };
 
 // ── 單人揭曉蓋板 ──────────────────────────────────────────
 function WinnerRevealOverlay({ winner, roundId, rank, total, onClose, isRolling, rollingName }) {
@@ -231,7 +237,7 @@ function LotteryScreen({ participants, participants2, roundCounts, onBack }) {
 
   return (
     <div className={`lottery-screen${drawDone ? ' lottery-screen--done' : ''}`}>
-      <div className={`round-bg round-bg--${currentRound.id}`} style={{ backgroundImage: `url('${currentRound.bgImage}')` }} />
+      <div className={`round-bg round-bg--${currentRound.id}`} style={{ backgroundImage: `url('${ROUND_BG_IMAGES[currentRound.id]}')` }} />
       {isGrand && <div className="divine-light" />}
       {showConfetti && <Confetti count={120} />}
       <button className="back-btn" onClick={onBack}>← 返回設定</button>

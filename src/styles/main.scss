@@ -1208,3 +1208,86 @@ body {
     border-color: rgba($gold, 0.55);
   }
 }
+
+// ===== MOBILE RESPONSIVE (max-width: 768px) =====
+// Only affects mobile — desktop layout is untouched
+@media (max-width: $mobile) {
+  .app-header {
+    padding: 20px 16px 14px;
+
+    h1 {
+      font-size: clamp(1.2rem, 6vw, 1.6rem);
+    }
+
+    .subtitle {
+      font-size: 0.75rem;
+    }
+  }
+
+  .setup-screen {
+    padding: 12px 12px 24px;
+
+    .section-card {
+      padding: 16px 14px;
+    }
+
+    h2 {
+      font-size: 1.1rem !important;
+    }
+  }
+
+  .import-row {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .rounds-config {
+    gap: 10px;
+  }
+
+  .round-config-item {
+    padding: 12px 10px !important;
+  }
+
+  .start-btn {
+    font-size: 1rem !important;
+    padding: 14px 24px !important;
+  }
+
+  .lottery-screen {
+    .drum-zone {
+      padding: 12px 12px 120px;
+    }
+
+    .round-header h2 {
+      font-size: clamp(1rem, 5vw, 1.4rem);
+    }
+
+    .rolling-display {
+      font-size: clamp(1rem, 5vw, 1.4rem);
+      gap: 4px;
+    }
+
+    .draw-btn {
+      font-size: 0.95rem;
+      padding: 14px 28px;
+    }
+
+    .back-btn {
+      font-size: 0.75rem;
+      padding: 6px 12px;
+      top: 10px;
+      left: 10px;
+    }
+  }
+
+  .reveal-panel {
+    width: 90vw !important;
+    max-width: 360px;
+    padding: 28px 20px !important;
+  }
+
+  .reveal-name {
+    font-size: clamp(1.6rem, 8vw, 2.2rem) !important;
+  }
+}
