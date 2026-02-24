@@ -1,0 +1,25 @@
+// Temple Color Palette
+$primary-red: #8B0000;
+$deep-red: #5C0000;
+$dark-red: #3A0000;
+$gold: #FFD700;
+$gold-light: #FFF0A0;
+$gold-dark: #B8860B;
+$crimson: #DC143C;
+$amber: #FF8C00;
+$orange: #FF6B00;
+$cream: #FFF8DC;
+$white: #FFFFFF;
+$black: #000000;
+
+// Fonts
+$font-primary: 'Noto Serif TC', 'STSong', 'SimSun', serif;
+
+// Shadows
+$glow-gold: 0 0 20px rgba(255, 215, 0, 0.8), 0 0 40px rgba(255, 215, 0, 0.4);
+$glow-red: 0 0 20px rgba(220, 20, 60, 0.8), 0 0 40px rgba(220, 20, 60, 0.4);
+$text-glow: 0 0 10px rgba(255, 215, 0, 1), 0 0 20px rgba(255, 215, 0, 0.8);
+
+// Breakpoints
+$mobile: 768px;
+$tablet: 1024px;

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Red circle background -->
+  <circle cx="50" cy="50" r="48" fill="#8B0000" stroke="#FFD700" stroke-width="3"/>
+  <!-- Lantern body -->
+  <ellipse cx="50" cy="52" rx="22" ry="28" fill="#FFD700"/>
+  <!-- Lantern top cap -->
+  <rect x="42" y="22" width="16" height="6" rx="3" fill="#B8860B"/>
+  <!-- Lantern bottom cap -->
+  <rect x="42" y="72" width="16" height="6" rx="3" fill="#B8860B"/>
+  <!-- Lantern top knob -->
+  <rect x="47" y="16" width="6" height="8" rx="2" fill="#B8860B"/>
+  <!-- Lantern bottom tassel stem -->
+  <rect x="48" y="78" width="4" height="6" rx="1" fill="#B8860B"/>
+  <!-- Tassel strands -->
+  <line x1="46" y1="84" x2="44" y2="96" stroke="#FFD700" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="50" y1="84" x2="50" y2="97" stroke="#FFD700" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="54" y1="84" x2="56" y2="96" stroke="#FFD700" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- Lantern vertical ribs -->
+  <line x1="38" y1="28" x2="36" y2="72" stroke="#B8860B" stroke-width="1.2" stroke-linecap="round"/>
+  <line x1="62" y1="28" x2="64" y2="72" stroke="#B8860B" stroke-width="1.2" stroke-linecap="round"/>
+  <!-- 福 character -->
+  <text x="50" y="63" text-anchor="middle" font-size="24" font-weight="900" font-family="serif" fill="#8B0000">福</text>
+  <!-- Red glow dots -->
+  <circle cx="50" cy="50" r="48" fill="none" stroke="rgba(255,215,0,0.3)" stroke-width="1"/>
+</svg>
