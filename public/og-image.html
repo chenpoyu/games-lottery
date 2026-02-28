@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1200, height=630">
+<title>OG Image Generator</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 1200px;
+    height: 630px;
+    overflow: hidden;
+    font-family: "Noto Serif TC", "PMingLiU", serif;
+  }
+  .og-container {
+    width: 1200px;
+    height: 630px;
+    background: linear-gradient(135deg, #1a0000 0%, #3d0c0c 30%, #8b0000 60%, #cc3300 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .border-frame {
+    position: absolute;
+    inset: 12px;
+    border: 3px solid #ffd700;
+    border-radius: 12px;
+    pointer-events: none;
+  }
+  .border-frame-inner {
+    position: absolute;
+    inset: 20px;
+    border: 1px solid rgba(255, 215, 0, 0.4);
+    border-radius: 8px;
+    pointer-events: none;
+  }
+  .corner-ornament {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border: 3px solid #ffd700;
+  }
+  .corner-ornament.tl { top: 28px; left: 28px; border-right: none; border-bottom: none; border-radius: 8px 0 0 0; }
+  .corner-ornament.tr { top: 28px; right: 28px; border-left: none; border-bottom: none; border-radius: 0 8px 0 0; }
+  .corner-ornament.bl { bottom: 28px; left: 28px; border-right: none; border-top: none; border-radius: 0 0 0 8px; }
+  .corner-ornament.br { bottom: 28px; right: 28px; border-left: none; border-top: none; border-radius: 0 0 8px 0; }
+  .year-badge {
+    background: linear-gradient(135deg, #ffd700, #ffaa00);
+    color: #8b0000;
+    padding: 8px 32px;
+    border-radius: 24px;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.4);
+  }
+  .horse-emoji {
+    font-size: 80px;
+    margin-bottom: 10px;
+    filter: drop-shadow(0 4px 20px rgba(255, 170, 0, 0.6));
+  }
+  .title {
+    font-size: 64px;
+    font-weight: 900;
+    background: linear-gradient(180deg, #fff9e6 0%, #ffd700 40%, #ffaa00 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: none;
+    filter: drop-shadow(0 3px 10px rgba(255, 215, 0, 0.5));
+    letter-spacing: 8px;
+    margin-bottom: 8px;
+  }
+  .subtitle {
+    font-size: 36px;
+    color: #ffd700;
+    letter-spacing: 12px;
+    margin-bottom: 24px;
+    text-shadow: 0 2px 10px rgba(255, 215, 0, 0.4);
+  }
+  .divider {
+    width: 400px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #ffd700, transparent);
+    margin-bottom: 24px;
+  }
+  .features {
+    display: flex;
+    gap: 40px;
+    font-size: 18px;
+    color: rgba(255, 215, 0, 0.85);
+    letter-spacing: 2px;
+  }
+  .features span {
+    padding: 6px 16px;
+    border: 1px solid rgba(255, 215, 0, 0.3);
+    border-radius: 20px;
+    background: rgba(255, 215, 0, 0.08);
+  }
+  .bg-pattern {
+    position: absolute;
+    inset: 0;
+    background-image:
+      radial-gradient(circle at 15% 25%, rgba(255, 170, 0, 0.08) 0%, transparent 50%),
+      radial-gradient(circle at 85% 75%, rgba(255, 170, 0, 0.08) 0%, transparent 50%),
+      radial-gradient(circle at 50% 50%, rgba(139, 0, 0, 0.3) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .sparkle {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: #ffd700;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 3px rgba(255, 215, 0, 0.6);
+  }
+</style>
+</head>
+<body>
+<div class="og-container">
+  <div class="bg-pattern"></div>
+  <div class="border-frame"></div>
+  <div class="border-frame-inner"></div>
+  <div class="corner-ornament tl"></div>
+  <div class="corner-ornament tr"></div>
+  <div class="corner-ornament bl"></div>
+  <div class="corner-ornament br"></div>
+
+  <!-- Sparkles -->
+  <div class="sparkle" style="top: 80px; left: 150px;"></div>
+  <div class="sparkle" style="top: 120px; right: 200px;"></div>
+  <div class="sparkle" style="bottom: 100px; left: 300px;"></div>
+  <div class="sparkle" style="bottom: 150px; right: 250px;"></div>
+  <div class="sparkle" style="top: 200px; left: 100px;"></div>
+  <div class="sparkle" style="top: 300px; right: 120px;"></div>
+
+  <div class="year-badge">丙午馬年 2026</div>
+  <div class="horse-emoji">🐎</div>
+  <div class="title">媽祖靈感開壇</div>
+  <div class="subtitle">互動抽獎系統</div>
+  <div class="divider"></div>
+  <div class="features">
+    <span>🔥 五行命理加權</span>
+    <span>🎴 卡牌揭曉動畫</span>
+    <span>🏮 廟會風格 UI</span>
+  </div>
+</div>
+</body>
+</html>

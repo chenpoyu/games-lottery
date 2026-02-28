@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://chenpoyu.github.io/games-lottery/sitemap.xml
